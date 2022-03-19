@@ -1,6 +1,7 @@
 info = [] #lista que vai receber minhas informacoes
 x = "" #elemento que vai se adequar as condicoes q ele vai pedir
 flag = True #enquanto for vdd vai passar por todas as condicoes do while
+space = ""
 while flag:
   x = input()
   if x == 'adicionar':
@@ -16,11 +17,15 @@ while flag:
       info.remove(nome)
       info.insert(posicao, nome)
   elif x == "imprimir lista atual":
-    print(*info, sep = " ")
+    for i in info:
+      space += i + " "
+    print(f"{space.strip()}")
+    space = ""
   elif x == "lista finalizada": 
     flag = False #como esta a minha lista finaliza aqui
     print("A lista ficou da seguinte forma:")
-    print(*info, sep = " ")
+    for i in info:
+      space += i + " "
+    print(f"{space.strip()}")
   else:
     print('Opçao não encontrada')
-  

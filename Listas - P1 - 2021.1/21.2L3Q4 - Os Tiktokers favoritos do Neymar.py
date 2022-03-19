@@ -16,5 +16,7 @@ for y in range(len(fav) - 1):
       guard = fav[w]
       fav[w] = fav[w + 1]
       fav[w + 1] = guard
-for k in range(n): #k = cada elemento da lista
+for k in range(n): #k = cada elemento da listaS
   print(f'{fav[k][0]}-{fav[k][1]}')
+
+#nice job
