@@ -29,3 +29,5 @@ while flag:
     print(f"{space.strip()}")
   else:
     print('Opçao não encontrada')
+
+#Output: Wrong answer on test case 2
